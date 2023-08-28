@@ -58,7 +58,7 @@ color: #111;
 .profile-picture-background{
     height: 92%;
     width: 92%;
-    background-image: url("../../../assets/Home/mary.JPG");
+    background-image: url("../../../assets/Home/mary.jpg");
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;

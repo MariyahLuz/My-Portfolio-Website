@@ -29,7 +29,7 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               Hello , I'M{" "}
-              <span className="highlighted-text">MARIYAH LUZINDA</span>
+              <span className="highlighted-text">BALUNGA MARIAM</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -40,15 +40,15 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Enthusiastic Dev 😎",
+                    "IT Specialist 😎",
                     1020,
-                    "Full stack Developer 💻",
+                    "Front-End Developer 💻",
                     1020,
-                    "MERN stack Dev 📱",
+                    "Reactjs Dev📱",
                     1020,
-                    "Cross Platform Dev 🔴",
+                    "Enthusiastic Entrepreneur  🔴",
                     1020,
-                    "React/React Native 🌐",
+                    "Leader && Innovator 🌐",
                     1020,
                   ]}
                 />
@@ -67,7 +67,7 @@ export default function Profile() {
               {" "}
               Hire Me{" "}
             </button>
-            <a href="maria.pdf" download="MARIYAH maria.pdf">
+            <a href="maria_cv.pdf" download="MARIYAH maria_cv.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
