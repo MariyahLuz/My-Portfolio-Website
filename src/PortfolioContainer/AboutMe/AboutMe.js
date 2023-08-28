@@ -14,7 +14,7 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      " I offer a versatile skill set. From website design to a passion for leadership and entrepreneurship, I bring creativity and agility. With hands-on data center experience and a strong IT background, I'm a valuable addition to any team.",
+      " I offer a versatile skill set. From website design to a passion for leadership and entrepreneurship, I bring creativity and agility. With hands-on data center experience and a strong IT background, I'm a valuable addition to any IT team.",
     highlights: {
       bullets: [
         "Front-End Developer",
@@ -63,7 +63,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="maria.pdf" download="MARIYAH maria.pdf">
+              <a href="maria_cv.pdf" download="MARIYAH maria_cv.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

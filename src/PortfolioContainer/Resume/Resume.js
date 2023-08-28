@@ -44,74 +44,70 @@ const Resume = (props) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "educ.jpg" },
+    { label: "Education", logoSrc: "work.jpg" },
     { label: "Work History", logoSrc: "work.jpg" },
-    { label: "Programming Skills", logoSrc: "work1.jpg" },
-    { label: "Projects", logoSrc: "proj.png" },
-    { label: "Interests", logoSrc: "likes.png" },
+    { label: "Programming Skills", logoSrc: "work.jpg" },
+    { label: "Projects", logoSrc: "work.jpg" },
+    { label: "Interests", logoSrc: "work.jpg" },
   ];
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 70 },
-    { skill: "React JS", ratingPercentage: 70 },
-    { skill: "Python", ratingPercentage: 40},
-    { skill: "Laravel", ratingPercentage: 20},
-    { skill: "Node JS", ratingPercentage: 40},
-    { skill: "Mongo Db", ratingPercentage: 10 },
-    { skill: "Core Java", ratingPercentage: 60},
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
+    { skill: "JavaScript", ratingPercentage: 60 },
+    { skill: "React JS", ratingPercentage: 70 },
+    { skill: "Python", ratingPercentage: 20},
+    { skill: "Node JS", ratingPercentage: 50},
+
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2022", toDate: "2022" },
+      title: "MpaMpe Crowdfunding Website",
+      duration: { fromDate: "2021", toDate: "Present" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "A crowdfunding platform for raising funds digitaly. Link 'http://mpampe.com/' ",
+      subHeading: "Technologies Used: NodeJs, Css, HTML.",
     },
+
+    {
+      title: "Desire Luzinda Foudation",
+      duration: { fromDate: "2021", toDate: "Present" },
+      description:
+        "An NGO website.Link ' https://desireluzindafoundation.org/' ",
+      subHeading:
+        "Technologies Used: JavaScipt, Css, HTML.",
+    },
+
     {
       title: "Mobile E-shop ",
       duration: { fromDate: "2020", toDate: "2022" },
       description:
-        "An ecommerce mobile application designed to sell products online with payment system integration",
+        "An ecommerce mobile application designed to sell products online with payment system integration.",
       subHeading:
         "Technologies Used:  Ionic, HTML, CSS, JavaScript",
     },
-    // {
-    //   title: "School Website",
-    //   duration: { fromDate: "2020", toDate: "2021" },
-    //   description:
-    //     "My high School website",
-    //   subHeading:
-    //     "Technologies Used: ReactJS, TailWind Css, JavaScript.",
-    // },
-    // {
-    //   title: "News Application",
-    //   duration: { fromDate: "2022", toDate: "2022" },
-    //   description:
-    //     "News application that displays both local and international news.",
-    //   subHeading:
-    //     "Technologies Used: ReactJS, Bootstrap, JavaScript.",
-    // },
     {
-      title: "Crowd Funding Application",
-      duration: { fromDate: "2021", toDate: "2022" },
+      title: "Caltec School Website",
+      duration: { fromDate: "July 2020", toDate: "Aug 2021" },
       description:
-        "A web based crowd funding application. ",
-      subHeading:
-        "Technologies Used: NodeJs, Css, HTML.",
-    },
-    {
-      title: "Messaging Application",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A messaging application that works like whatsapp.",
+        "A secondary School website",
       subHeading:
         "Technologies Used: ReactJS, TailWind Css, JavaScript.",
     },
+    
+    
+
+    // {
+    //   title: "Nakimuli Foudation",
+    //   duration: { fromDate: "2021", toDate: "Present" },
+    //   description:
+    //     "An NGO website.Link 'https://nakimulifoundation.org/'",
+    //   subHeading:
+    //     "Technologies Used: JavaScipt, Css, HTML.",
+    // },
+
 
   ];
 
@@ -141,32 +137,31 @@ const Resume = (props) => {
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
-        <ResumeHeading
-          heading={"MPAMPE"}
-          subHeading={"FrontEnd Developer"}
+      <ResumeHeading
+          heading={"MpaMpe (Co-Founder & CEO)"}
+          // subHeading={"Co-Founder & CEO"}
           fromDate={"2021"}
-          toDate={"2022"}
+          toDate={"Present"}
         />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as a FrontEnd Developer.
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed a crowd funding website to allow people with financial need create campaigns for funding.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I have as well worked on several other Personal based projects with both the FrontEnd and backend.
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope the UI as per the given
-            designs.
-          </span>
-          <br />
-        </div>
+        <ResumeHeading
+          heading={"Desire Luzinda Foundation (Head Of IT and Volunteer)"}
+          // subHeading={"Head Of IT and Volunteer"}
+          fromDate={"2021"}
+          toDate={"Present"}
+        />
+        <ResumeHeading
+          heading={"Stratcom Computer Solutions Limited (Intern)"}
+          // subHeading={"Intern"}
+          fromDate={"July 2021"}
+          toDate={"Sept 2021"}
+        />
+        <ResumeHeading
+          heading={"URA (Data Center Intern)"}
+          // subHeading={"Data Center Intern"}
+          fromDate={"July 2023"}
+          toDate={"Aug 2023"}
+        />
+       
       </div>
     </div>,
 
@@ -206,15 +201,22 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Leadership"
-        description="Apart from being a tech enthusiast and a code writer, I am so passionate about leadership and I have been a leader since my high school after being elected headgirl and as well as the women affairs minister at university."
+        heading="Leadership & Entrepreneurship"
+        description="In addition to my enthusiasm for technology, I'm passionate about leadership and entrepreneurship, seeking opportunities to develop and apply leadership skills in various contexts."
       />
+      
+      <ResumeHeading
+        heading="Innovation and Creativity"
+        description="I'm intrigued by creative problem-solving and innovative thinking, aiming to contribute fresh ideas and approaches to challenges."/>
+    
+      <ResumeHeading
+        heading="Continuous Learning"
+        description="Committed to continuous learning, consistently seeking opportunities to expand knowledge and skills in diverse areas." />
+      
       <ResumeHeading
         heading="Music"
         description="Listening to soothing music is something I can never compromise with." />
-      <ResumeHeading
-        heading="Teaching"
-        description="I feel blessed sharing my knowledge however little, with someone else."/>
+      
     </div>,
   ];
 
