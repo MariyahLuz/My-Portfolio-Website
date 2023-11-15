@@ -159,7 +159,7 @@ const Resume = (props) => {
           heading={"URA (Data Center Intern)"}
           // subHeading={"Data Center Intern"}
           fromDate={"July 2023"}
-          toDate={"Aug 2023"}
+          toDate={"Sept 2023"}
         />
        
       </div>
